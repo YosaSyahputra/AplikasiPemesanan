@@ -1,0 +1,86 @@
+<!-- res/layout/activity_daftar_pesanan.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearPesanan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BayarPesanan">
+
+    <ListView
+        android:id="@+id/listViewPesanan"
+        android:layout_width="match_parent"
+        android:layout_height="456dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="90dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="Total Harga :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtTotBayar"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioTunai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tunai" />
+
+        <RadioButton
+            android:id="@+id/radioOvo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OVO" />
+
+        <RadioButton
+            android:id="@+id/radioGopay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="GoPAY"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/background_rounded"
+        android:id="@+id/btnBayarSekarang"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="bayarPesanan"
+        android:text="Bayar Sekarang" />
+
+</LinearLayout>
