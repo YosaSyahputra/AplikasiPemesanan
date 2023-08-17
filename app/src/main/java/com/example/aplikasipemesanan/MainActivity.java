@@ -51,6 +51,20 @@ public class MainActivity extends AppCompatActivity {
     private void munculkanMenu(){
         listMenu = new ArrayList<>();
         // ... Inisialisasi gambar-gambar menu dan tambahkan ke listMenu
+        listMenu = new ArrayList<>();
+        int gadoGado = getResources().getIdentifier("gado_gado","drawable",getPackageName());
+        int nasiGoreng = getResources().getIdentifier("nasi_goreng","drawable",getPackageName());
+        int nasiPecel = getResources().getIdentifier("nasi_pecel","drawable",getPackageName());
+        int nasiSoto = getResources().getIdentifier("soto_ayam","drawable",getPackageName());
+        int mieGoreng = getResources().getIdentifier("mie_goreng", "drawable", getPackageName());
+        int oporAyam = getResources().getIdentifier("opor_ayam", "drawable", getPackageName());
+
+        listMenu.add(new ItemMenu("Nasi Goreng", "Nasi goreng dengan bumbu istimewa", 12000, nasiGoreng));
+        listMenu.add(new ItemMenu("Nasi Pecel", "Nasi dengan sayur pecel khas Jawa", 10000, nasiPecel));
+        listMenu.add(new ItemMenu("Nasi Soto", "Soto ayam hangat dengan rempah pilihan", 15000, nasiSoto));
+        listMenu.add(new ItemMenu("Gado-gado", "Gado-gado dengan beragam bahan segar", 10000, gadoGado));
+        listMenu.add(new ItemMenu("Mie Goreng", "Mie goreng dengan bumbu yang gurih", 12000, mieGoreng));
+        listMenu.add(new ItemMenu("Opor Ayam", "Ayam empuk dengan kuah opor yang lezat", 15000, oporAyam));
 
         // Inisialisasi AdapterMenu dan mengatur adapter untuk RecyclerView
         menuAdapter = new AdapterMenu(listMenu);

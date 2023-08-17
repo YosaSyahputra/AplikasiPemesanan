@@ -84,6 +84,7 @@ public class AdapterMenu extends RecyclerView.Adapter<AdapterMenu.ViewHolder> {
 
     // Dapatkan posisi item yang dipilih
     public int getSelectedPosition() {
+        int selectedPosition = 0;
         return selectedPosition; // Mengembalikan posisi item yang dipilih
     }
 
