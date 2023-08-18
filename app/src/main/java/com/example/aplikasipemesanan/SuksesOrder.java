@@ -36,7 +36,7 @@ public class SuksesOrder extends AppCompatActivity {
         txtPesanNama.setText(namaPesan);
         txtPesanHarga.setText(String.valueOf(hargaPesan));
         txtJumlah.setText(String.valueOf(jumlahPesan));
-        txtTotalHarga.setText(String.valueOf(totalharga));
+        txtTotalHarga.setText("Rp. " + (String.valueOf(totalharga)));
 
         // Memberikan tindakan pada tombol untuk kembali ke halaman utama
         btnToMenu.setOnClickListener(new View.OnClickListener() {

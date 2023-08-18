@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/background_rounded"
             android:fontFamily="sans-serif-black"
@@ -46,6 +47,8 @@
         android:background="@drawable/background_rounded"
         android:onClick="formBayarPesanan"
         android:textColor="#FFFFFF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:visibility="gone"
         tools:ignore="OnClick" />
 
@@ -56,6 +59,8 @@
         android:background="@drawable/background_rounded"
         android:onClick="toRiwayat"
         android:text="RIWAYAT PESANAN"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:textColor="#FFFFFF"
         tools:ignore="TouchTargetSizeCheck" />
 </LinearLayout>
