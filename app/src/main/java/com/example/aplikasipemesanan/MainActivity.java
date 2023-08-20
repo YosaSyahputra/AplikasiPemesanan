@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         // Memanggil fungsi untuk menampilkan daftar menu dan total bayar
         munculkanMenu();
         munculkanTotal();
+        // clearDb();
     }
 
     // Method untuk pindah ke halaman riwayat pesanan
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Method untuk menghapus semua data pesanan dari SharedPreferences
     private void clearDb(){
-        SharedPreferences cleardb = getSharedPreferences("pembelian", MODE_PRIVATE);
+        SharedPreferences cleardb = getSharedPreferences("riwayat", MODE_PRIVATE);
         SharedPreferences.Editor edit = cleardb.edit();
         edit.clear();
         edit.apply();
